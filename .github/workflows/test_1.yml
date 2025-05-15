@@ -38,6 +38,8 @@ jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún serv
     needs: hola # generamos una dependencia para que este job se ejecute despues del job hola
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
       - name: LS # nombre del step
         run: ls -al
 # Lo que estás viendo es parte de un archivo de configuración de GitHub Actions, una herramienta de integración continua (CI/CD) que permite automatizar tareas en tus proyectos, como pruebas, despliegues o simplemente ejecutar comandos.
@@ -59,3 +61,4 @@ jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún serv
 # 🔹 Qué hace: muestra en consola el contenido del archivo hola.txt.
 # 🔹 Comando cat: significa "concatenate and display", y se usa para ver archivos de texto desde la terminal.
 
+# UN ACTION NO ES MAS QUE UN BLOQUE DE CODIGO REUTILIZABLE QUE REALIZA UNA TAREA EN ESPÈCIFICA EN UN STEP
