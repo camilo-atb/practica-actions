@@ -24,6 +24,7 @@ jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún serv
 
   other:
     runs-on: ubuntu-latest # cada job se ejecuta dentro de un servidor, por eso se debe definir run on en cada jon
+    needs: hola # generamos una dependencia para que este job se ejecute despues del job hola
 
     steps:
       - name: LS # nombre del step
