@@ -11,3 +11,10 @@ jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún serv
       # definimos todos los steps que necesitamos (una lista de esteps):
       - name: Hola Mundo # nombre de la lista
         run: echo "Hola Mundo" # run nos permite ejecutar un comando
+
+  other:
+    runs-on: ubuntu-latest # cada job se ejecuta dentro de un servidor, por eso se debe definir run on en cada jon
+
+    steps:
+      - name: LS # nombre del step
+        run: ls -al
