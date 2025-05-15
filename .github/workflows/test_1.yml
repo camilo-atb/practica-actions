@@ -1,5 +1,6 @@
 name: Hola Mundo
 
+# cuando ejecutamos push ejecutamos nuestro workflow en este caso
 on: [push] # evento: cuando hacemos push en nuestro repositorio
 
 jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún servidor
@@ -29,3 +30,22 @@ jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún serv
     steps:
       - name: LS # nombre del step
         run: ls -al
+# Lo que estás viendo es parte de un archivo de configuración de GitHub Actions, una herramienta de integración continua (CI/CD) que permite automatizar tareas en tus proyectos, como pruebas, despliegues o simplemente ejecutar comandos.
+# En ese contexto, los steps son pasos individuales dentro de un "job" (trabajo) de GitHub Actions. Y el campo run se usa para ejecutar comandos de terminal (como si estuvieras escribiéndolos en la consola).
+
+# run: echo "Hola Mundo"
+#🔹 Qué hace: imprime el texto "Hola Mundo" en la consola.
+#🔹 Comando echo: sirve para mostrar texto en la terminal.
+
+# 📌 Paso 2: ->   run: touch hola.txt
+# 🔹 Qué hace: crea un archivo vacío llamado hola.txt.
+# 🔹 Comando touch: se usa en Unix/Linux para crear archivos nuevos (vacíos) si no existen.
+
+# 📌 Paso 3: ->   run: echo "Hola Mundo" >> hola.txt
+# 🔹 Qué hace: escribe "Hola Mundo" dentro del archivo hola.txt.
+# 🔹 El >> significa: agregar contenido al final del archivo.
+
+# 📌 Paso 4:  run: cat hola.txt
+# 🔹 Qué hace: muestra en consola el contenido del archivo hola.txt.
+# 🔹 Comando cat: significa "concatenate and display", y se usa para ver archivos de texto desde la terminal.
+
