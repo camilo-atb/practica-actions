@@ -1,7 +1,7 @@
 name: Hola Mundo
 
 # cuando ejecutamos push ejecutamos nuestro workflow en este caso
-on: [push] # evento: cuando hacemos push en nuestro repositorio
+on: [push, pull_request] # evento: cuando hacemos push en nuestro repositorio
 
 jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún servidor
   # los jobs se ejecutan directamente dentro de un servidor, y action nos provee varios servidores (mac, ubuntu, etc)
