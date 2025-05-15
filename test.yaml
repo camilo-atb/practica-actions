@@ -1,0 +1,29 @@
+key: Hola Mundo # en yaml no son necesarias las comillas para el str, y tambien trabaja con identacion
+
+person: # creamos un objeto con tres atributos; como un diccionario
+  name: John
+  age: 30
+  city: New York
+
+# string multilinea
+scripts: >
+  Hola
+  Hola
+  testort
+  items: # creamos una lista
+    - item1
+    - item2
+    - item3
+
+  items2:
+    - item1: Hola
+    - item2: Hola
+    - item3: hola
+
+scriptss: |
+  Hola
+  Hola
+  testort
+
+# yaml es uno de los lenguajes mas utilizados en devobs para temas de configuracion
+

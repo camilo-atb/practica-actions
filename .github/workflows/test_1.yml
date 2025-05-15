@@ -1,0 +1,13 @@
+name: Hola Mundo
+
+on: [push] # evento: cuando hacemos push en nuestro repositorio
+
+jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún servidor
+  # los jobs se ejecutan directamente dentro de un servidor, y action nos provee varios servidores (mac, ubuntu, etc)
+  hola: # damos un nombre representativo
+    runs-on: ubuntu-latest # con runs-on especificamos el sistema operativo en el que queremos ejecutar el job. en este caso seleccionamos ubuntu en su ultima versión
+
+    steps: # definimos a los steps, que son la unidad mas pequeña, que nos van a permitir realizar diferentes acciones
+      # definimos todos los steps que necesitamos (una lista de esteps):
+      - name: Hola Mundo # nombre de la lista
+        run: echo "Hola Mundo" # run nos permite ejecutar un comando
