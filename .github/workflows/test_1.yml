@@ -12,6 +12,16 @@ jobs: # nos va a permitir ejecutar todo lo que necesitamos dentro de algún serv
       - name: Hola Mundo # nombre de la lista
         run: echo "Hola Mundo" # run nos permite ejecutar un comando
 
+      # podemos agregar mas steps
+      - name: touch file
+        run: touch hola.txt
+
+      - name: Set text
+        run: echo "Hola Mundo" >> hola.txt
+
+      - name: Read file
+        run: cat hola.txt
+
   other:
     runs-on: ubuntu-latest # cada job se ejecuta dentro de un servidor, por eso se debe definir run on en cada jon
 
